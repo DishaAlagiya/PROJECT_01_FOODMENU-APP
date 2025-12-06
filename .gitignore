@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Django stuff
+*.log
+*.sqlite3
+
+# Media and static uploads (DO NOT put user-uploaded files in Git)
+pictures/
+staticfiles/
+media/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+foodmenu/dbconfig.txt
+foodmenu/debug.log
+foodmenu/logconfig.txt

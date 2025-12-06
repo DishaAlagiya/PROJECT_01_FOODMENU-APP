@@ -1,0 +1,28 @@
+{% extends 'food/base.html' %}
+{% block body %}
+<div class="flex m-10">
+    <div>
+        <img class="w-120 rounded-lg" src="{{item_detail.item_image}}" alt="Image cannot be displayed">
+    </div>
+    <div class="mx-15 space-y-5">
+        <div class="font-bold text-4xl">{{item_detail.item_name}}</div>
+        <div class="font-bold text-2xl text-green-700">${{item_detail.item_price}}</div>
+        <div>{{item_detail.item_desc}}</div>
+        <div class="space-x-2">
+            {% if item_detail.user_name == request.user %}
+            <a href="{% url 'food:update_item' item_detail.id  %}" class="px-4 py-2 bg-yellow-500 font-bold text-white rounded-lg">Edit</a>
+            <a href="{% url 'food:delete_item' item_detail.id %}"class="px-4 py-2 bg-red-500 font-bold text-white rounded-lg">Delete</a>
+            {% endif %}
+        </div>
+        
+    </div>
+
+</div>
+{% endblock %}
+
+
+<!-- <h1>Product Details</h1>
+-------------------------------------------------------
+<h2> Product Name: {{item_detail.item_name}} </h2>
+<h2> Product Detail: {{item_detail.item_desc}} </h2>
+<h2> Product Price:  {{item_detail.item_price}} </h2> -->
