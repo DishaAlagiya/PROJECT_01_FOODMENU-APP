@@ -28,7 +28,7 @@ A Django web application for managing food menus, categories, and user accounts.
 ## ⚙️ Tech Stack
 
 - **Backend:** Python, Django
-- **Database:**Postgres
+- **Database:** Postgres
 - **Frontend:** Django Templates (HTML/CSS)
 - **Version Control:** Git & GitHub
 
